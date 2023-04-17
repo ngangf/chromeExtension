@@ -1,0 +1,245 @@
+
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+
+.ten h1 {
+    font-size:34px; font-weight:500; text-transform:uppercase;
+    margin-left: 1rem;
+  }
+  .ten h1:before {
+      background-color: #c50000;
+      border-radius: 0.25rem;
+      content: '';
+      display: block;
+      height: 0.25rem;
+      width: 100px;
+      margin-bottom: 1rem;
+  }
+
+  
+  body {
+      background: linear-gradient(-45deg, #d1c5b1, #84aed6, #eaeaea, #ffe0ef);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      width: 20rem;
+   
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.manuallyInput {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.active,
+.manuallyInput:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+.margin{
+ margin: 0px;
+}
+
+
+.manualButton {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.manualButton:hover,
+.manualButton:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.manualButton:hover {
+  transform: translateY(-1px);
+}
+
+.manualButton:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.date{
+    border-radius: 5px;
+}
+
+.outputs{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    max-width: 20rem;
+    margin-left: 1rem;
+    max-width: 18rem;
+}
+
+
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s
+
+}
+
+/* CSS */
+.CiteButton {
+  align-items: center;
+  background-color: #d5edf6;
+  background-position: 0 0;
+  border: 1px solid #d5edf6;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
+    none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.CiteButton:active,
+.CiteButton:hover,
+.CiteButton:focus {
+  outline: 0;
+}
+
+.CiteButton:active {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.CiteButton:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+
+.CiteButton:active:hover,
+.CiteButton:focus:hover,
+.CiteButton:focus {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.option {
+  border-radius: 5px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+@keyframes fadeMe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
