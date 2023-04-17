@@ -1,0 +1,31 @@
+{
+
+    "name": "WordCitationTool",
+    "manifest_version": 3,
+    "version": "0.1.0",
+    "description": "Allows the user to cite the current website the user is on or cite a website with the URL",
+    "permissions": [
+    "storage",
+     "tabs"],
+    "host_permissions":["http://*.google.com/"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts":[
+        {
+        "matches": ["http://*.google.com/"], 
+        "js": ["contentScript.js"]
+        }
+    ],
+    "action": {
+        "default_title": "WordCitationTool",
+        "default_popup": "popup.html"
+    }
+    
+
+
+
+
+
+
+}

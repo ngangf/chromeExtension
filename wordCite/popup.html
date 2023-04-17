@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="./cdnjs/bootstrap-4.3.1-dist/css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="body">
+        <div class="ten">
+            <h1>Citation Tool</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <input id="search" class="input" placeholder="Input URL"></input>
+                </div>
+            </div>
+
+            <div class=" row">
+                <div class="col-3 pr-0 margin">
+                    <select class="option" name="formatOne" id="formatOne">
+                        <option value="apa">APA7</option>
+                        <option value="mla"">MLA8</option>
+            </select>
+            </div>
+                <div class=" col-6 margin">
+                 <button id="manuallyInput" class="manualButton" type="button">Manually Input</button>
+                </div>
+                <div class=" col-3 pl-0">
+                    <button id="citeButton" type="button" class="CiteButton mb-2">Cite</button>
+                </div>
+                </div>
+
+
+
+            <div id="content" class="content mt-1" style="display: none; animation: fadeMe 1s;">
+                <input class="input" id="atitle" placeholder="Article Title"></input>
+                <input class="input" id="aFirstName" placeholder="Author First Name"></input>
+                <input class="input" id="aLastName" placeholder="Author Last Name"></input>
+                <input class="input" id="url" placeholder="URL"></input>
+                <input class="input" id="publicator" placeholder="Publicator"></input>
+
+                <label class="mb-0">Date Published:</label>
+                <input class="data" id="datePublished" type="date" date-date-format="YYYY-MM-dd"
+                    placeholder="Date Published"></input>
+
+                <label for="format" class="mb-0">Choose a Format:</label>
+                <select class="option mb-1" name="format" id="format">
+                    <option value="apa">APA7</option>
+                    <option value="mla"">MLA8</option>
+                </select>
+                <button id=" manualciteButton" class="CiteButton" type="button">Cite</button>
+            </div>
+            <div class="row mb-3 ">
+                <div id="outputs " style="display: none" class="outputs">
+                    <p id="citationOutput"></p>
+                    <p id="inTextCitation"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./cdnjs/jquery-3.6.1.min.js"></script>
+    <script src="./cdnjs/moment.js"></script>
+    <script src="./cdnjs/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="./popup.js" type="module"></script>
+
+</body>
+
+</html>
