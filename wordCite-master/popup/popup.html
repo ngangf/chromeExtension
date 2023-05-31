@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="./cdnjs/bootstrap-4.3.1-dist/css/bootstrap.css" />
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="ten">
+            <h1 class=""></h1>
+        </div>
+
+        <div class="container-flush">
+            <h1 class="mainTitle">EasyCitation</h1>
+            <div class="mainBody">
+                <div class="row w-100 ">
+                    <div class="col-12 d-flex mt-0 p-0  ">
+                        <textarea type="input" id="search" class="input" placeholder="Input URL"></textarea>
+                    </div>
+                </div>
+
+                <div class=" row w-100">
+                    <div class="col-3 d-flex align-items-center ">
+                        <select class="option" name="formatOne" id="formatOne">
+                            <option value="apa">APA7</option>
+                            <option value="mla"">MLA8</option>
+                        </select>
+                </div>
+                <div class=" col-6 d-flex justify-content-center align-items-center ">
+                                <button id="manuallyInput" class="manualButton" type="button">Manually Input</button>
+                    </div>
+                    
+                    <div class=" col-3 d-flex pl-0 align-items-center ">
+                        <button id="citeButton" type="button" onChange="change()" class="CiteButton">Cite Tab</button>
+                       
+                      
+                    </div>
+                </div>
+
+
+
+                <div id="content" class="content mt-1 w-100" style="display: none; animation: fadeMe 1s;">
+                    <form id="manualInput">
+                        <input class="inputManual" id="atitle" placeholder="Article Title"></input>
+                        <input class="inputManual" id="aFirstName" placeholder="Author First Name"></input>
+                        <input class="inputManual" id="aLastName" placeholder="Author Last Name"></input>
+                        <input class="inputManual" id="url" placeholder="URL"></input>
+                        <input class="inputManual" id="publicator" placeholder="Publicator"></input>
+
+                        <label class="mb-0 mainLabel">Date Published:</label>
+                        <input class="option" id="datePublished" type="date" date-date-format="YYYY-MM-dd"
+                            placeholder="Date Published"></input>
+
+                        <label for="format" class="mb-0 mainLabel">Choose a Format:</label>
+                        <select class="option mb-1" name="format" id="format">
+                            <option value="apa">APA7</option>
+                            <option value="mla"">MLA8</option>
+                </select>
+                    </form>
+                    <div class=" row w-100 mb-1">
+                                <div class="col-6">
+                                    <button id="resetButton" class="optionButton" type="button">Reset Inputs</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="optionButton" type="button " id="saveButton" class="optionButton"
+                                        type="button">Save Inputs</button>
+                                </div>
+                                <div class="col-12 mt-2 justify-content-center align-items-center" id="status"
+                                    style="display: none;">
+                                    <p id="statusSaved"
+                                        class="saveText d-flex  justify-content-center align-items-center"></p>
+                                    <p id="statusReset"
+                                        class="resetText d-flex justify-content-center align-items-center"></p>
+                                </div>
+
+                </div>
+
+                <button id="manualciteButton" class="CiteButton2" type="button">Cite</button>
+            </div>
+        </div>
+        <div id="outputs" style="display: none;  animation: fadeMe 1s;" class="mainBody mt-1">
+            <div class="row">
+                <div class="col-12 mt-1 d-flex justify-content-between">
+                    <p class="citationTitle">Citation Results:</p>
+                    <p class="exitButton" id="closeCitation">X</p>
+                </div>
+            </div>
+            <div class="row h-100 d-flex align-items-center">
+                <div class="col-12">
+                    <p class="citation1" id="citationOutput"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <textarea class="citation2" id="inTextCitation"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="savedCitations" class="mainBody mt-1">
+            <div class="row w-100">
+                <div class="col-12 d-flex lineBorder w-100 justify-content-between">
+                    <p class="citationTitle">Saved Citations.</p>
+                    <p class="resetButton" id="resetSavedCitation">Reset</p>
+                </div>
+            </div>
+            <div class="row w-100 m-0">
+                <div class="col-12 ">
+                    <ol id="savedCitation" class="list p-4">
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./cdnjs/jquery-3.6.1.min.js"></script>
+    <script src="./cdnjs/moment.js"></script>
+    <script src="./cdnjs/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="./popup.js" self  type="application/javascript"></script>
+
+
+</body>
+
+</html>

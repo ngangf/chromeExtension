@@ -1,0 +1,541 @@
+
+@font-face {
+  font-family: loretto-light;
+  src: url(fonts/loretto-light-webfont.woff);
+}
+@font-face {
+  font-family: loretto-medium;
+  src: url(fonts/loretto-medium-webfont.woff);
+}
+
+
+
+
+
+.ten h1 {
+    font-size:34px; font-weight:500; text-transform:uppercase;
+    display:flex;
+    justify-content:end;
+    margin: 0;
+  
+  }
+  .ten h1:before {
+      background-color: #c50000;
+      border-radius: 0.25rem;
+      content: '';
+      display: block;
+      height: 0.25rem;
+      width: 150px;
+    
+  }
+
+  
+  body {
+      background: linear-gradient(-45deg, #d1c5b1, #84aed6, #eaeaea, #ffe0ef);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      width: 20rem;
+  
+      padding: 0px 8px 8px 8px;
+   
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.manuallyInput {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.active,
+.manuallyInput:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+.margin{
+ margin: 0px;
+}
+
+.mainTitle{
+  display:flex;
+  justify-content:center;
+  border-radius: 10px;
+  line-height: 2;
+  font-size: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  align-items:center;
+  
+  font-family: "loretto-light";
+}
+
+
+.mainBody{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  align-items:center;
+}
+
+
+.manualButton {
+  background: transparent;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  font-family:loretto-light;
+  color:#000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+}
+
+.manualButton:hover,
+.manualButton:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.manualButton:hover {
+  transform: translateY(-1px);
+}
+
+.manualButton:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.date{
+    border-radius: 5px;
+}
+
+.saveText{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  font-family:loretto-light;
+  color:#257930;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+  
+}
+
+.resetText{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  font-family:loretto-light;
+  color:#792525;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+}
+
+.citationTitle{
+  background: transparent;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  font-family:loretto-light;
+  color: #000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   padding: 0.25rem;
+   margin: 5px;
+}
+
+.list{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 0;
+   max-height: 200px;
+  font-family:loretto-light;
+  color: #000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   width: 100%;  
+   overflow: hidden;
+   overflow-y:scroll;
+
+}
+
+.exitButton{
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family:loretto-light;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:15px;
+  height:15px;
+
+}
+
+.savedCitations{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family:loretto-light;
+  color: #000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+}
+
+.lineBorder{
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+ol {list-style: none; counter-reset: li}
+
+li::before {content: counter(li); color: white;
+  display: inline-block; width: 1em;}
+
+  li {counter-increment: li}
+
+.specificItem{
+
+  font-size: 12px;
+  line-height: 1.5;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  min-height: 100px;
+  border-radius: 15px;
+  font-family:loretto-light;
+  color: #ffffff;   
+   background-color: rgb(0, 0, 0);
+   border: none;
+   width: 90%;
+   padding: 8px;
+  margin: 5px;
+   word-wrap: break-word;
+}
+
+.defaultSave{
+  font-size: 15px;
+  display: flex;
+  padding: 8px;
+  margin: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #ffffff;   
+  background-color: rgb(0, 0, 0);
+  min-height: 30px;
+  border-radius: 10px;
+
+
+}
+
+.resetButton{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  font-family:loretto-light;
+  color:#00000088;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding: 0.25rem;
+   margin: 5px;
+}
+
+
+.citation1{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+  min-height: 100px;
+  max-height: 200px;
+  font-family:loretto-light;
+  color: #000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   width: 90%;
+   padding: 8px;
+    margin: 5px;
+   word-wrap: break-word;
+}
+
+.citation2{
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 0;
+  height: 30px;
+  font-family:loretto-light;
+  color: #000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   width: 90%;
+   padding: 8px;
+    margin: 5px;
+   word-wrap: break-word;
+}
+
+.outputs{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    max-width: 20rem;
+    margin-left: 1rem;
+    max-width: 18rem;
+}
+
+
+
+.input {
+    font-family: 'loretto-light', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    border-radius: 10px 10px 0rem 0rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    transition: all 0.3s
+
+}
+
+.content{
+  padding: 0;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0;
+}
+
+.inputManual{
+  background: transparent;
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.5;
+  border-radius: 0;
+  font-family:loretto-light;
+  color:#000000;   
+   background-color: rgba(255, 255, 255, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   margin:5px;
+   border-radius: 2px;
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   padding-left: 1rem;
+
+   
+}
+
+.mainLabel{
+  background: transparent;
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+  line-height: 2;
+  border-radius: 0;
+  font-family:loretto-medium;
+  color:#0000007f;   
+   background-color: rgba(255, 255, 255, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+}
+
+/* CSS */
+.CiteButton {
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  font-family:loretto-light;
+  color:#ffffff;  
+   background-color: black;
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   border-radius: 10px;
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.CiteButton:active,
+.CiteButton:hover,
+.CiteButton:focus {
+  outline: 0;
+}
+
+.CiteButton:active {
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.CiteButton:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+
+.CiteButton:active:hover,
+.CiteButton:focus:hover,
+.CiteButton:focus {
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.CiteButton2 {
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  font-family:loretto-light;
+  color:#ffffff;  
+   background-color: black;
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   border-radius: 0px 0px 10px 10px;
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.CiteButton2:active,
+.CiteButton2:hover,
+.CiteButton2:focus {
+  outline: 0;
+}
+
+.CiteButton2:active {
+ 
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.CiteButton2:hover {
+  background-color: #ffe3e3;
+
+}
+
+.CiteButton2:active:hover,
+.CiteButton2:focus:hover,
+.CiteButton2:focus {
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.optionButton{
+  background: transparent;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.5;
+  border-radius: 0;
+  font-family:loretto-light;
+  color:#000000;   
+   background-color: rgba(255, 255, 255, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   border-radius: 2px;
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   
+
+}
+
+.option {
+  background: transparent;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  font-family:loretto-light;
+  color:#000000;   
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   text-indent: 0.01px;
+   text-overflow: '';
+   cursor: pointer;
+  
+}
+
+@keyframes fadeMe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+{
+
+    "name": "EasyCitation",
+    "action": {
+        "default_title": "EasyCitation",
+        "default_popup": "./popup/popup.html"
+    },
+    "icons":{
+        "16": "assets/quotes-16.png",
+        "48": "assets/quotes-48.png"
+    },
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Allows the user to cite the current website the user is on or cite a website with the URL",
+    "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+     "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+    
+    
+
+
+
+
+
+
+}
